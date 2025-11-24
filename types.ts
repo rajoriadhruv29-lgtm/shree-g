@@ -16,7 +16,8 @@ export interface Product {
   description: string;
   description_hi?: string; // Hindi Description
   variants: ProductVariant[];
-  imageUrl: string;
+  imageUrl: string; // Main image (kept for backward compatibility)
+  images?: string[]; // Array of all images (Main + Extras)
 }
 
 export interface Category {

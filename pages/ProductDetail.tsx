@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { PRODUCTS } from '../data/products';
 import { ArrowLeft, Download, Share2 } from 'lucide-react';
@@ -8,10 +8,25 @@ const ProductDetail: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
   const { t, language } = useLanguage();
   const product = PRODUCTS.find(p => p.id === productId);
+  
+  // State for image gallery
+  const [selectedImage, setSelectedImage] = useState<string>('');
+
+  // Initialize selected image when product loads
+  useEffect(() => {
+    if (product) {
+      setSelectedImage(product.imageUrl);
+    }
+  }, [product]);
 
   if (!product) {
     return <div className="p-12 text-center text-gray-500">{t('product.notFound')}</div>;
   }
+
+  // Get all images available for the product
+  const productImages = product.images && product.images.length > 0 
+    ? product.images 
+    : [product.imageUrl];
 
   return (
     <div className="min-h-screen bg-white py-12">
@@ -26,15 +41,38 @@ const ProductDetail: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
           
-          {/* LEFT SIDE: Image */}
+          {/* LEFT SIDE: Image Gallery */}
           <div className="w-full lg:w-1/2">
-            <div className="bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden p-8 flex items-center justify-center shadow-inner">
+            {/* Main Image Display */}
+            <div className="bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden p-8 flex items-center justify-center shadow-inner mb-4 h-[400px]">
               <img 
-                src={product.imageUrl} 
+                src={selectedImage} 
                 alt={product.name} 
-                className="w-full h-auto max-h-[500px] object-contain mix-blend-multiply hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-contain mix-blend-multiply transition-transform duration-500"
+                onError={(e) => {
+                  e.currentTarget.src = 'https://via.placeholder.com/500x500?text=Image+Not+Found';
+                }}
               />
             </div>
+
+            {/* Thumbnails */}
+            {productImages.length > 1 && (
+              <div className="flex gap-4 overflow-x-auto pb-2">
+                {productImages.map((img, index) => (
+                  <button 
+                    key={index}
+                    onClick={() => setSelectedImage(img)}
+                    className={`relative w-24 h-24 flex-shrink-0 bg-gray-50 rounded-lg border-2 overflow-hidden flex items-center justify-center p-2 ${selectedImage === img ? 'border-brand-yellow ring-2 ring-brand-yellow/20' : 'border-gray-200 hover:border-brand-blue'}`}
+                  >
+                    <img 
+                      src={img} 
+                      alt={`${product.name} view ${index + 1}`} 
+                      className="w-full h-full object-contain mix-blend-multiply" 
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* RIGHT SIDE: Details */}

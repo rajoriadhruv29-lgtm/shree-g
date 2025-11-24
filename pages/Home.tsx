@@ -21,7 +21,8 @@ const Home: React.FC = () => {
              muted 
              playsInline
              className="w-full h-full object-cover"
-             poster="https://images.unsplash.com/photo-1565514020176-db61a3380a60?ixlib=rb-4.0.3"
+             // INSTRUCTION: Add 'hero-poster.jpg' to public/images/home/
+             poster="/images/home/hero-poster.jpg"
            >
              <source src="https://videos.pexels.com/video-files/5825052/5825052-uhd_2560_1440_24fps.mp4" type="video/mp4" />
            </video>
@@ -65,10 +66,17 @@ const Home: React.FC = () => {
             </div>
             <div className="md:w-1/2 relative">
                <div className="absolute -inset-4 bg-brand-yellow/20 rounded-lg transform rotate-2"></div>
+               {/* 
+                  INSTRUCTION: Add 'about-us.jpg' to public/images/home/ 
+               */}
                <img 
-                src="https://images.unsplash.com/photo-1625559686853-046970e220b1?q=80&w=1000&auto=format&fit=crop" 
-                alt="Metal Sheets and Hinge Material" 
+                src="/images/home/about-us.jpg" 
+                alt="Shree Hinges Manufacturing" 
                 className="relative rounded-lg shadow-xl w-full object-cover h-[400px]"
+                onError={(e) => {
+                  // Fallback image if local file is missing
+                  e.currentTarget.src = 'https://images.unsplash.com/photo-1625559686853-046970e220b1?q=80&w=1000&auto=format&fit=crop';
+                }}
               />
             </div>
           </div>

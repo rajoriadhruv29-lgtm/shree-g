@@ -1,5 +1,10 @@
 import { Product, Category } from '../types';
 
+// INSTRUCTIONS:
+// 1. Create a folder 'public/images/categories' and 'public/images/products'
+// 2. Add images with the filenames specified below.
+// 3. For multiple images per product, name them like: 'product-name.jpg', 'product-name-2.jpg', 'product-name-3.jpg'
+
 export const CATEGORIES: Category[] = [
   {
     id: 'rivet-hinges',
@@ -7,7 +12,7 @@ export const CATEGORIES: Category[] = [
     title_hi: 'रिवेट हिंज / कब्जा',
     description: 'High-quality M.S. Rivet Hinges available in various sizes and heavy-duty variants.',
     description_hi: 'विभिन्न आकारों और भारी-भरकम वेरियंट्स में उपलब्ध उच्च गुणवत्ता वाले M.S. रिवेट हिंज।',
-    coverImage: 'https://placehold.co/600x400/e2e8f0/1e293b?text=Rivet+Hinges'
+    coverImage: '/images/categories/rivet-hinges.jpg'
   },
   {
     id: 't-hinges',
@@ -15,7 +20,7 @@ export const CATEGORIES: Category[] = [
     title_hi: 'टी-हिंज / कब्जा',
     description: 'Durable T-Hinges for gates, sheds, and barn doors in multiple sizes.',
     description_hi: 'गेट, शेड और खलिहान के दरवाजों के लिए टिकाऊ टी-हिंज, कई आकारों में।',
-    coverImage: 'https://placehold.co/600x400/e2e8f0/1e293b?text=T-Hinges'
+    coverImage: '/images/categories/t-hinges.jpg'
   },
   {
     id: 'butt-hinges',
@@ -23,7 +28,7 @@ export const CATEGORIES: Category[] = [
     title_hi: 'बट हिंज / कब्जा',
     description: 'Versatile M.S. Butt Hinges for doors and cabinets.',
     description_hi: 'दरवाजों और अलमारियों के लिए बहुमुखी M.S. बट हिंज।',
-    coverImage: 'https://placehold.co/600x400/e2e8f0/1e293b?text=Butt+Hinges'
+    coverImage: '/images/categories/butt-hinges.jpg'
   },
   {
     id: 'accessories',
@@ -31,7 +36,7 @@ export const CATEGORIES: Category[] = [
     title_hi: 'एक्सेसरीज',
     description: 'Essential hardware accessories including Outer, Teen Hole Patti, and Shutter Kunda.',
     description_hi: 'आउटर, तीन होल पट्टी, और शटर कुंडा सहित आवश्यक हार्डवेयर एक्सेसरीज।',
-    coverImage: 'https://placehold.co/600x400/e2e8f0/1e293b?text=Accessories'
+    coverImage: '/images/categories/accessories.jpg'
   }
 ];
 
@@ -44,7 +49,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. रिवेट हिंज 3 इंच',
     description: 'Compact rivet hinges suitable for smaller applications. Available in 2 weight variants.',
     description_hi: 'छोटे अनुप्रयोगों के लिए उपयुक्त कॉम्पैक्ट रिवेट हिंज। 2 वजन वेरिएंट में उपलब्ध।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=Rivet+Hinge+3%22',
+    imageUrl: '/images/products/rivet-3-inch.jpg',
+    images: [
+      '/images/products/rivet-3-inch.jpg',
+      '/images/products/rivet-3-inch-2.jpg',
+      '/images/products/rivet-3-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Light',
@@ -73,7 +83,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. रिवेट हिंज 4 इंच',
     description: 'Versatile 4-inch rivet hinges available in multiple weights for various load requirements.',
     description_hi: 'विभिन्न भार आवश्यकताओं के लिए कई वजन में उपलब्ध बहुमुखी 4-इंच रिवेट हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=Rivet+Hinge+4%22',
+    imageUrl: '/images/products/rivet-4-inch.jpg',
+    images: [
+      '/images/products/rivet-4-inch.jpg',
+      '/images/products/rivet-4-inch-2.jpg',
+      '/images/products/rivet-4-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Light',
@@ -111,7 +126,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. रिवेट हिंज 5 इंच',
     description: 'Heavy-duty 5-inch rivet hinge for robust applications.',
     description_hi: 'मजबूत अनुप्रयोगों के लिए हेवी-ड्यूटी 5-इंच रिवेट हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=Rivet+Hinge+5%22',
+    imageUrl: '/images/products/rivet-5-inch.jpg',
+    images: [
+      '/images/products/rivet-5-inch.jpg',
+      '/images/products/rivet-5-inch-2.jpg',
+      '/images/products/rivet-5-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Standard',
@@ -131,7 +151,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. रिवेट हिंज 6 इंच',
     description: 'Extra strong 6-inch rivet hinge for industrial use.',
     description_hi: 'औद्योगिक उपयोग के लिए अतिरिक्त मजबूत 6-इंच रिवेट हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=Rivet+Hinge+6%22',
+    imageUrl: '/images/products/rivet-6-inch.jpg',
+    images: [
+      '/images/products/rivet-6-inch.jpg',
+      '/images/products/rivet-6-inch-2.jpg',
+      '/images/products/rivet-6-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Standard',
@@ -153,7 +178,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. टी-हिंज 4 इंच',
     description: '4-inch T-Hinge for light gates and cabinets.',
     description_hi: 'हल्के गेट और कैबिनेट के लिए 4-इंच टी-हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=T-Hinge+4%22',
+    imageUrl: '/images/products/t-hinge-4-inch.jpg',
+    images: [
+      '/images/products/t-hinge-4-inch.jpg',
+      '/images/products/t-hinge-4-inch-2.jpg',
+      '/images/products/t-hinge-4-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Standard',
@@ -173,7 +203,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. टी-हिंज 5 इंच',
     description: '5-inch T-Hinge for general utility.',
     description_hi: 'सामान्य उपयोग के लिए 5-इंच टी-हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=T-Hinge+5%22',
+    imageUrl: '/images/products/t-hinge-5-inch.jpg',
+    images: [
+      '/images/products/t-hinge-5-inch.jpg',
+      '/images/products/t-hinge-5-inch-2.jpg',
+      '/images/products/t-hinge-5-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Standard',
@@ -193,7 +228,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. टी-हिंज 6 इंच',
     description: '6-inch T-Hinge for medium-weight gates.',
     description_hi: 'मध्यम वजन वाले गेटों के लिए 6-इंच टी-हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=T-Hinge+6%22',
+    imageUrl: '/images/products/t-hinge-6-inch.jpg',
+    images: [
+      '/images/products/t-hinge-6-inch.jpg',
+      '/images/products/t-hinge-6-inch-2.jpg',
+      '/images/products/t-hinge-6-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Standard',
@@ -213,7 +253,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. टी-हिंज 8 इंच',
     description: '8-inch T-Hinge for larger doors and gates.',
     description_hi: 'बड़े दरवाजों और गेटों के लिए 8-इंच टी-हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=T-Hinge+8%22',
+    imageUrl: '/images/products/t-hinge-8-inch.jpg',
+    images: [
+      '/images/products/t-hinge-8-inch.jpg',
+      '/images/products/t-hinge-8-inch-2.jpg',
+      '/images/products/t-hinge-8-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Standard',
@@ -233,7 +278,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. टी-हिंज 10 इंच',
     description: '10-inch heavy T-Hinge for substantial support.',
     description_hi: 'पर्याप्त समर्थन के लिए 10-इंच भारी टी-हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=T-Hinge+10%22',
+    imageUrl: '/images/products/t-hinge-10-inch.jpg',
+    images: [
+      '/images/products/t-hinge-10-inch.jpg',
+      '/images/products/t-hinge-10-inch-2.jpg',
+      '/images/products/t-hinge-10-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Standard',
@@ -253,7 +303,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. टी-हिंज 12 इंच',
     description: '12-inch extra long T-Hinge for heavy barn doors and industrial gates.',
     description_hi: 'भारी खलिहान दरवाजों और औद्योगिक गेटों के लिए 12-इंच अतिरिक्त लंबा टी-हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=T-Hinge+12%22',
+    imageUrl: '/images/products/t-hinge-12-inch.jpg',
+    images: [
+      '/images/products/t-hinge-12-inch.jpg',
+      '/images/products/t-hinge-12-inch-2.jpg',
+      '/images/products/t-hinge-12-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Standard',
@@ -275,7 +330,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. बट हिंज 4 इंच',
     description: '4-inch Butt Hinges available in light, medium, and heavy variants for doors.',
     description_hi: 'दरवाजों के लिए हल्के, मध्यम और भारी वेरिएंट में उपलब्ध 4-इंच बट हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=Butt+Hinge+4%22',
+    imageUrl: '/images/products/butt-4-inch.jpg',
+    images: [
+      '/images/products/butt-4-inch.jpg',
+      '/images/products/butt-4-inch-2.jpg',
+      '/images/products/butt-4-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Light / Variant 1',
@@ -313,7 +373,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'M.S. बट हिंज 5 इंच',
     description: '5-inch Butt Hinges providing superior strength for heavier doors.',
     description_hi: 'भारी दरवाजों के लिए बेहतर ताकत प्रदान करने वाले 5-इंच बट हिंज।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=Butt+Hinge+5%22',
+    imageUrl: '/images/products/butt-5-inch.jpg',
+    images: [
+      '/images/products/butt-5-inch.jpg',
+      '/images/products/butt-5-inch-2.jpg',
+      '/images/products/butt-5-inch-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Light / Variant 1',
@@ -353,7 +418,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'आउटर (Outer)',
     description: 'High quality Outer plates available in multiple sizes.',
     description_hi: 'कई आकारों में उपलब्ध उच्च गुणवत्ता वाली आउटर प्लेटें।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=Outer',
+    imageUrl: '/images/products/outer.jpg',
+    images: [
+      '/images/products/outer.jpg',
+      '/images/products/outer-2.jpg',
+      '/images/products/outer-3.jpg'
+    ],
     variants: [
       {
         variantName: '40mm',
@@ -391,7 +461,12 @@ export const PRODUCTS: Product[] = [
     name_hi: 'तीन होल पट्टी',
     description: 'Durable Teen Hole Patti for fabrication.',
     description_hi: 'फैब्रिकेशन के लिए टिकाऊ तीन होल पट्टी।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=Teen+Hole+Patti',
+    imageUrl: '/images/products/teen-hole-patti.jpg',
+    images: [
+      '/images/products/teen-hole-patti.jpg',
+      '/images/products/teen-hole-patti-2.jpg',
+      '/images/products/teen-hole-patti-3.jpg'
+    ],
     variants: [
       {
         variantName: 'Standard',
@@ -411,7 +486,11 @@ export const PRODUCTS: Product[] = [
     name_hi: 'शटर कुंडा',
     description: 'Heavy duty Shutter Kunda for secure locking.',
     description_hi: 'सुरक्षित लॉकिंग के लिए हेवी ड्यूटी शटर कुंडा।',
-    imageUrl: 'https://placehold.co/600x600/f8fafc/1e293b?text=Shutter+Kunda',
+    imageUrl: '/images/products/shutter-kunda.jpg',
+    images: [
+      '/images/products/shutter-kunda.jpg',
+      '/images/products/shutter-kunda-2.jpg'
+    ],
     variants: [
       {
         variantName: 'Standard',
