@@ -26,15 +26,15 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-3">
-              <div className="h-20 w-auto flex items-center justify-center py-2">
+              <div className="h-20 w-auto flex items-center justify-center">
                  {/* 
                     INSTRUCTIONS: 
                     Place your logo file in: public/images/logo.png 
                  */}
                  <img 
                    src="/images/logo.png" 
-                   alt="Shree Hinges Logo" 
-                   className="h-full w-auto object-contain"
+                   alt="Shree G Hinges" 
+                   className="h-full w-auto object-contain hover:scale-105 transition-transform duration-300"
                    onError={(e) => {
                      // Fallback if image is missing
                      e.currentTarget.style.display = 'none';

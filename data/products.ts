@@ -420,9 +420,7 @@ export const PRODUCTS: Product[] = [
     description_hi: 'कई आकारों में उपलब्ध उच्च गुणवत्ता वाली आउटर प्लेटें।',
     imageUrl: '/images/products/outer.jpg',
     images: [
-      '/images/products/outer.jpg',
-      '/images/products/outer-2.jpg',
-      '/images/products/outer-3.jpg'
+      '/images/products/outer.jpg'
     ],
     variants: [
       {
@@ -488,9 +486,8 @@ export const PRODUCTS: Product[] = [
     description_hi: 'सुरक्षित लॉकिंग के लिए हेवी ड्यूटी शटर कुंडा।',
     imageUrl: '/images/products/shutter-kunda.jpg',
     images: [
-      '/images/products/shutter-kunda.jpg',
-      '/images/products/shutter-kunda-2.jpg'
-    ],
+      '/images/products/shutter-kunda.jpg'
+        ],
     variants: [
       {
         variantName: 'Standard',
