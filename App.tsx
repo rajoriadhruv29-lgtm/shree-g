@@ -9,26 +9,29 @@ import ProductList from './pages/ProductList';
 import ProductDetail from './pages/ProductDetail';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import { LanguageProvider } from './LanguageContext';
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen font-sans text-gray-900">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/products" element={<ProductRange />} />
-            <Route path="/products/:categoryId" element={<ProductList />} />
-            <Route path="/products/:categoryId/:productId" element={<ProductDetail />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <div className="flex flex-col min-h-screen font-sans text-gray-900">
+          <Navbar />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/products" element={<ProductRange />} />
+              <Route path="/products/:categoryId" element={<ProductList />} />
+              <Route path="/products/:categoryId/:productId" element={<ProductDetail />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </LanguageProvider>
   );
 };
 

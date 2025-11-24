@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Truck, ShieldCheck, Settings, Link as LinkIcon, ArrowRight } from 'lucide-react';
 import { CATEGORIES } from '../data/products';
+import { useLanguage } from '../LanguageContext';
 
 const Home: React.FC = () => {
+  const { t, language } = useLanguage();
+
   return (
     <div className="flex flex-col min-h-screen">
       
@@ -20,9 +23,7 @@ const Home: React.FC = () => {
              className="w-full h-full object-cover"
              poster="https://images.unsplash.com/photo-1565514020176-db61a3380a60?ixlib=rb-4.0.3"
            >
-             {/* Using a stock industrial video (Metal machining/Sparks) */}
              <source src="https://videos.pexels.com/video-files/5825052/5825052-uhd_2560_1440_24fps.mp4" type="video/mp4" />
-             Your browser does not support the video tag.
            </video>
         </div>
 
@@ -30,18 +31,18 @@ const Home: React.FC = () => {
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
-              Precision Engineered <br />
-              <span className="text-brand-yellow">M.S. Hinges</span>
+              {t('home.heroTitle')} <br />
+              <span className="text-brand-yellow">{t('home.heroSubtitle')}</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
-              We are a specialized manufacturer providing high-quality rivet, bolt, and door hinges. Built for strength, designed for longevity in every fold.
+              {t('home.heroDesc')}
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/products" className="bg-brand-yellow text-brand-blue px-8 py-3 rounded-md font-bold hover:bg-yellow-400 transition-colors flex items-center gap-2 shadow-lg shadow-yellow-900/20">
-                View Catalogue <ArrowRight size={20} />
+                {t('home.viewCatalogue')} <ArrowRight size={20} />
               </Link>
               <Link to="/contact" className="border-2 border-white text-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-brand-blue transition-colors">
-                Contact Us
+                {t('home.contactUs')}
               </Link>
             </div>
           </div>
@@ -53,17 +54,16 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
-              <h4 className="text-brand-yellow font-bold uppercase tracking-wider mb-2">About Us</h4>
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-6">Trusted Name in Hinge Manufacturing</h2>
+              <h4 className="text-brand-yellow font-bold uppercase tracking-wider mb-2">{t('home.aboutTeaserTitle')}</h4>
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-6">{t('home.aboutTeaserHeading')}</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                We are a specialized manufacturer of M.S. Hinges, focused on providing high-quality products. With a strong emphasis on quality, efficiency, and customer satisfaction, we have established ourselves as a trusted partner in the hardware sector.
+                {t('home.aboutTeaserDesc')}
               </p>
               <Link to="/about" className="text-brand-blue font-semibold border-b-2 border-brand-yellow pb-1 hover:text-gray-900">
-                Read More About Our Journey
+                {t('home.readMore')}
               </Link>
             </div>
             <div className="md:w-1/2 relative">
-               {/* Replaced generic factory image with metal/manufacturing focused image */}
                <div className="absolute -inset-4 bg-brand-yellow/20 rounded-lg transform rotate-2"></div>
                <img 
                 src="https://images.unsplash.com/photo-1625559686853-046970e220b1?q=80&w=1000&auto=format&fit=crop" 
@@ -75,11 +75,11 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* Competitive Advantages (From Image 2) */}
+      {/* Competitive Advantages */}
       <div className="py-16 bg-brand-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-brand-blue uppercase">Our Competitive Advantages</h2>
+            <h2 className="text-3xl font-bold text-brand-blue uppercase">{t('home.advantagesTitle')}</h2>
             <div className="w-24 h-1 bg-brand-yellow mx-auto mt-4"></div>
           </div>
 
@@ -89,9 +89,9 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-blue">
                 <Settings size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Quality Raw Materials</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">{t('home.adv1Title')}</h3>
               <p className="text-gray-600 text-sm">
-                We use top-grade mild steel from trusted suppliers, ensuring our hinges are strong and long-lasting.
+                {t('home.adv1Desc')}
               </p>
             </div>
 
@@ -100,9 +100,9 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-blue">
                 <LinkIcon size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Efficient Supply Chain</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">{t('home.adv2Title')}</h3>
               <p className="text-gray-600 text-sm">
-                Our streamlined supply chain allows us to quickly source materials, reducing lead times and enhancing efficiency.
+                {t('home.adv2Desc')}
               </p>
             </div>
 
@@ -111,9 +111,9 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-blue">
                 <ShieldCheck size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Strong Quality Control</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">{t('home.adv3Title')}</h3>
               <p className="text-gray-600 text-sm">
-                We maintain strict quality checks at every production stage, ensuring our hinges meet high industry standards.
+                {t('home.adv3Desc')}
               </p>
             </div>
 
@@ -122,9 +122,9 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-blue">
                 <Truck size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Timely Delivery</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">{t('home.adv4Title')}</h3>
               <p className="text-gray-600 text-sm">
-                We prioritize meeting deadlines, ensuring our customers receive their orders on time without compromising quality.
+                {t('home.adv4Desc')}
               </p>
             </div>
           </div>
@@ -134,21 +134,21 @@ const Home: React.FC = () => {
       {/* Product Range Preview */}
       <div className="py-16 bg-white">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <h2 className="text-3xl font-bold text-brand-blue mb-10 text-center">Explore Our Range</h2>
+           <h2 className="text-3xl font-bold text-brand-blue mb-10 text-center">{t('home.exploreRange')}</h2>
            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
              {CATEGORIES.slice(0, 3).map(cat => (
                <Link key={cat.id} to={`/products/${cat.id}`} className="group relative overflow-hidden rounded-lg shadow-lg h-64">
                  <img src={cat.coverImage} alt={cat.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
                  <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/90 to-transparent flex flex-col justify-end p-6">
-                   <h3 className="text-white text-xl font-bold mb-1">{cat.title}</h3>
-                   <span className="text-brand-yellow text-sm font-medium group-hover:underline flex items-center gap-1">View Products <ArrowRight size={14}/></span>
+                   <h3 className="text-white text-xl font-bold mb-1">{language === 'hi' && cat.title_hi ? cat.title_hi : cat.title}</h3>
+                   <span className="text-brand-yellow text-sm font-medium group-hover:underline flex items-center gap-1">{t('home.viewProducts')} <ArrowRight size={14}/></span>
                  </div>
                </Link>
              ))}
            </div>
            <div className="text-center mt-10">
              <Link to="/products" className="inline-block border-2 border-brand-blue text-brand-blue px-8 py-2 rounded-full font-semibold hover:bg-brand-blue hover:text-white transition-all">
-               View All Products
+               {t('home.viewAll')}
              </Link>
            </div>
          </div>
