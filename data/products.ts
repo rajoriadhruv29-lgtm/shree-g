@@ -15,6 +15,30 @@ export const CATEGORIES: Category[] = [
     coverImage: '/images/categories/rivet-hinges.jpg'
   },
   {
+    id: 'fabrication-hinges',
+    title: 'Fabrication Hinges / Kabja',
+    title_hi: 'फैब्रिकेशन हिंज / कब्जा',
+    description: 'Specialized fabrication hinges for industrial welding and structural applications.',
+    description_hi: 'औद्योगिक वेल्डिंग और संरचनात्मक अनुप्रयोगों के लिए विशेष फैब्रिकेशन हिंज।',
+    coverImage: '/images/categories/fabrication-hinges.jpg'
+  },
+  {
+    id: 'bolt-hinges',
+    title: 'Bolt Hinges / Kabja',
+    title_hi: 'बोल्ट हिंज / कब्जा',
+    description: 'Robust Bolt Hinges designed for secure gate and door mounting.',
+    description_hi: 'सुरक्षित गेट और दरवाजे की माउंटिंग के लिए डिज़ाइन किए गए मजबूत बोल्ट हिंज।',
+    coverImage: '/images/categories/bolt-hinges.jpg'
+  },
+  {
+    id: 'lorry-hinges',
+    title: 'Lorry Hinges / Kabja',
+    title_hi: 'लॉरी हिंज / कब्जा',
+    description: 'Heavy-duty Lorry Hinges for automotive and transport vehicle body applications.',
+    description_hi: 'ऑटोमोटिव और परिवहन वाहन बॉडी अनुप्रयोगों के लिए हेवी-ड्यूटी लॉरी हिंज।',
+    coverImage: '/images/categories/lorry-hinges.jpg'
+  },
+  {
     id: 't-hinges',
     title: 'T-Hinges / Kabja',
     title_hi: 'टी-हिंज / कब्जा',
@@ -166,6 +190,137 @@ export const PRODUCTS: Product[] = [
         width: '96 mm',
         thickness: '4.5 mm',
         weight: '700 gm'
+      }
+    ]
+  },
+
+  // --- Fabrication Hinges ---
+  {
+    id: 'fabrication-3-inch',
+    categoryId: 'fabrication-hinges',
+    name: 'M.S. Fabrication Hinges 3 Inch',
+    name_hi: 'M.S. फैब्रिकेशन हिंज 3 इंच',
+    description: 'Precision made 3-inch fabrication hinge for light metal works.',
+    description_hi: 'हल्के धातु कार्यों के लिए सटीक निर्मित 3-इंच फैब्रिकेशन हिंज।',
+    imageUrl: '/images/products/fabrication-3-inch.jpg',
+    images: [
+      '/images/products/fabrication-3-inch.jpg',
+      '/images/products/fabrication-3-inch-2.jpg',
+      '/images/products/fabrication-3-inch-3.jpg'
+    ],
+    variants: [
+      {
+        variantName: 'Standard',
+        itemCode: 'FH-3',
+        size: '3 Inch',
+        length: '75 mm',
+        width: '45 mm',
+        thickness: '1.5 mm',
+        weight: '60 gm'
+      }
+    ]
+  },
+  {
+    id: 'fabrication-4-inch',
+    categoryId: 'fabrication-hinges',
+    name: 'M.S. Fabrication Hinges 4 Inch',
+    name_hi: 'M.S. फैब्रिकेशन हिंज 4 इंच',
+    description: 'Standard 4-inch fabrication hinge for general welding applications.',
+    description_hi: 'सामान्य वेल्डिंग अनुप्रयोगों के लिए मानक 4-इंच फैब्रिकेशन हिंज।',
+    imageUrl: '/images/products/fabrication-4-inch.jpg',
+    images: [
+      '/images/products/fabrication-4-inch.jpg',
+      '/images/products/fabrication-4-inch-2.jpg',
+      '/images/products/fabrication-4-inch-3.jpg'
+    ],
+    variants: [
+      {
+        variantName: 'Standard',
+        itemCode: 'FH-4',
+        size: '4 Inch',
+        length: '100 mm',
+        width: '60 mm',
+        thickness: '1.5 mm',
+        weight: '120 gm'
+      }
+    ]
+  },
+
+  // --- Bolt Hinges ---
+  {
+    id: 'bolt-3-inch',
+    categoryId: 'bolt-hinges',
+    name: 'M.S. Bolt Hinges 3 Inch',
+    name_hi: 'M.S. बोल्ट हिंज 3 इंच',
+    description: 'Robust 3-inch bolt hinge providing secure attachment.',
+    description_hi: 'सुरक्षित लगाव प्रदान करने वाला मजबूत 3-इंच बोल्ट हिंज।',
+    imageUrl: '/images/products/bolt-3-inch.jpg',
+    images: [
+      '/images/products/bolt-3-inch.jpg',
+      '/images/products/bolt-3-inch-2.jpg',
+      '/images/products/bolt-3-inch-3.jpg'
+    ],
+    variants: [
+      {
+        variantName: 'Standard',
+        itemCode: 'BH-BLT-3',
+        size: '3 Inch',
+        length: '68 mm',
+        width: '58 mm',
+        thickness: '2.5 mm',
+        weight: '160 gm'
+      }
+    ]
+  },
+  {
+    id: 'bolt-4-inch',
+    categoryId: 'bolt-hinges',
+    name: 'M.S. Bolt Hinges 4 Inch',
+    name_hi: 'M.S. बोल्ट हिंज 4 इंच',
+    description: 'Heavy duty 4-inch bolt hinge for gates and doors.',
+    description_hi: 'गेट और दरवाजों के लिए हेवी ड्यूटी 4-इंच बोल्ट हिंज।',
+    imageUrl: '/images/products/bolt-4-inch.jpg',
+    images: [
+      '/images/products/bolt-4-inch.jpg',
+      '/images/products/bolt-4-inch-2.jpg',
+      '/images/products/bolt-4-inch-3.jpg'
+    ],
+    variants: [
+      {
+        variantName: 'Standard',
+        itemCode: 'BH-BLT-4',
+        size: '4 Inch',
+        length: '100 mm',
+        width: '64 mm',
+        thickness: '2.5 mm',
+        weight: '200 gm'
+      }
+    ]
+  },
+
+  // --- Lorry Hinges ---
+  {
+    id: 'lorry-2.5-inch',
+    categoryId: 'lorry-hinges',
+    name: 'M.S. Lorry Hinges 2.5 Inch',
+    name_hi: 'M.S. लॉरी हिंज 2.5 इंच',
+    description: 'Durable 2.5-inch lorry hinge specially designed for vehicle bodies.',
+    description_hi: 'वाहन निकायों के लिए विशेष रूप से डिज़ाइन किया गया टिकाऊ 2.5-इंच लॉरी हिंज।',
+    imageUrl: '/images/products/lorry-2.5-inch.jpg',
+    images: [
+      '/images/products/lorry-2.5-inch.jpg',
+      '/images/products/lorry-2.5-inch-2.jpg',
+      '/images/products/lorry-2.5-inch-3.jpg'
+    ],
+    variants: [
+      {
+        variantName: 'Standard',
+        itemCode: 'LH-2.5',
+        size: '2.5 Inch',
+        length: '65 mm',
+        width: '160 mm',
+        thickness: '3.5 mm',
+        weight: '350 gm'
       }
     ]
   },
@@ -323,6 +478,31 @@ export const PRODUCTS: Product[] = [
   },
 
   // --- Butt Hinges ---
+  {
+    id: 'butt-3-inch',
+    categoryId: 'butt-hinges',
+    name: 'M.S. Butt Hinges 3 Inch',
+    name_hi: 'M.S. बट हिंज 3 इंच',
+    description: '3-inch Butt Hinges suitable for lightweight doors and cabinets.',
+    description_hi: 'हल्के दरवाजों और अलमारियों के लिए उपयुक्त 3-इंच बट हिंज।',
+    imageUrl: '/images/products/butt-3-inch.jpg',
+    images: [
+      '/images/products/butt-3-inch.jpg',
+      '/images/products/butt-3-inch-2.jpg',
+      '/images/products/butt-3-inch-3.jpg'
+    ],
+    variants: [
+      {
+        variantName: 'Standard',
+        itemCode: 'BH-3',
+        size: '3 Inch',
+        length: '75 mm',
+        width: '46 mm',
+        thickness: '1.5 mm',
+        weight: '50-55 gm'
+      }
+    ]
+  },
   {
     id: 'butt-4-inch',
     categoryId: 'butt-hinges',
