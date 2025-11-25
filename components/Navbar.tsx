@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
                     Place your logo file in: public/images/logo.png 
                  */}
                  <img 
-                   src="/images/logo.jpg" 
+                   src="/images/logo.png" 
                    alt="Shree G Hinges" 
                    className="h-full w-auto object-contain hover:scale-105 transition-transform duration-300"
                    onError={(e) => {
