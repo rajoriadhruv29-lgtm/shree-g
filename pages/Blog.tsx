@@ -1,26 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Blog: React.FC = () => {
+  useEffect(() => {
+    document.title = "Industry Blog | Shree G Hinges";
+  }, []);
+
   const posts = [
     {
       id: 1,
       title: "Choosing the Right Hinge for Heavy Industrial Doors",
       excerpt: "When it comes to industrial applications, the strength of the hinge determines the longevity of the door. Here is how to choose between Rivet and Bolt hinges.",
-      date: "Oct 15, 2025",
+      date: "Oct 15, 2023",
       image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
       title: "Maintenance Tips for Mild Steel Hinges",
       excerpt: "To prevent rust and ensure smooth operation, M.S. hinges require periodic maintenance. Learn the best lubricants and cleaning techniques.",
-      date: "Sep 22, 2025",
+      date: "Sep 22, 2023",
       image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
       title: "Understanding Hinge Specifications: Width vs Thickness",
       excerpt: "What matters more for load bearing? We break down the technical specifications found in our catalogue to help you make informed decisions.",
-      date: "Aug 05, 2025",
+      date: "Aug 05, 2023",
       image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];

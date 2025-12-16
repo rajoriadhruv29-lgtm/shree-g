@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Phone, Mail, MapPin, Clock, FileText } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 const Contact: React.FC = () => {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    document.title = "Contact Us | Shree G Hinges";
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">

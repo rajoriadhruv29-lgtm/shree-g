@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CATEGORIES } from '../data/products';
 import { ArrowRight } from 'lucide-react';
@@ -6,6 +6,10 @@ import { useLanguage } from '../LanguageContext';
 
 const ProductRange: React.FC = () => {
   const { t, language } = useLanguage();
+
+  useEffect(() => {
+    document.title = "Our Product Range | Shree G Hinges";
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">

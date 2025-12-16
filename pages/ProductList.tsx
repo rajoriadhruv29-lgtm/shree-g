@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { PRODUCTS, CATEGORIES } from '../data/products';
 import { ArrowLeft } from 'lucide-react';
@@ -10,6 +10,12 @@ const ProductList: React.FC = () => {
   
   const category = CATEGORIES.find(c => c.id === categoryId);
   const products = PRODUCTS.filter(p => p.categoryId === categoryId);
+
+  useEffect(() => {
+    if (category) {
+      document.title = `${language === 'hi' && category.title_hi ? category.title_hi : category.title} | Shree G Hinges`;
+    }
+  }, [category, language]);
 
   if (!category) {
     return <div className="p-12 text-center text-gray-500">{t('product.categoryNotFound')}</div>;

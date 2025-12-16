@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLanguage } from '../LanguageContext';
 
 const About: React.FC = () => {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    document.title = "About Us | Shree G Hinges";
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">

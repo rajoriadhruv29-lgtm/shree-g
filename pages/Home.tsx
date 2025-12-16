@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Truck, ShieldCheck, Settings, Link as LinkIcon, ArrowRight } from 'lucide-react';
 import { CATEGORIES } from '../data/products';
@@ -6,6 +6,10 @@ import { useLanguage } from '../LanguageContext';
 
 const Home: React.FC = () => {
   const { t, language } = useLanguage();
+
+  useEffect(() => {
+    document.title = "Home | Shree G Hinges - Specialized Manufacturer";
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen">

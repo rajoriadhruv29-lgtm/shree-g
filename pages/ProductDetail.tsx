@@ -16,8 +16,9 @@ const ProductDetail: React.FC = () => {
   useEffect(() => {
     if (product) {
       setSelectedImage(product.imageUrl);
+      document.title = `${language === 'hi' && product.name_hi ? product.name_hi : product.name} | Shree G Hinges`;
     }
-  }, [product]);
+  }, [product, language]);
 
   if (!product) {
     return <div className="p-12 text-center text-gray-500">{t('product.notFound')}</div>;
