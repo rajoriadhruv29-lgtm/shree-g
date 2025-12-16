@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   const { t, language } = useLanguage();
 
   useEffect(() => {
-    document.title = "Home | Shree G Hinges - Specialized Manufacturer";
+    document.title = "MS Hinge / Kabja Manufacturer Indore | Wholesale Supplier";
   }, []);
 
   return (
