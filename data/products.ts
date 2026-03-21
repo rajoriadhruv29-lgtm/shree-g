@@ -1,10 +1,5 @@
 import { Product, Category } from '../types';
 
-// INSTRUCTIONS:
-// 1. Create a folder 'public/images/categories' and 'public/images/products'
-// 2. Add images with the filenames specified below.
-// 3. For multiple images per product, name them like: 'product-name.jpg', 'product-name-2.jpg', 'product-name-3.jpg'
-
 export const CATEGORIES: Category[] = [
   {
     id: 'rivet-hinges',

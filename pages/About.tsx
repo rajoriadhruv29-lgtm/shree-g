@@ -38,7 +38,7 @@ const About: React.FC = () => {
             </div>
             <div className="bg-gray-200 h-64 lg:h-auto relative">
               <img 
-                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                src="/images/home/about-us.jpg" 
                 alt="Hinge on a door" 
                 className="w-full h-full object-cover"
               />

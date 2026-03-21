@@ -27,22 +27,11 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-3">
               <div className="h-20 w-auto flex items-center justify-center">
-                 {/* 
-                    INSTRUCTIONS: 
-                    Place your logo file in: public/images/logo.png 
-                 */}
                  <img 
                    src="/images/home/logo.png" 
                    alt="Shree G Hinges" 
                    className="h-full w-auto object-contain hover:scale-105 transition-transform duration-300"
-                   onError={(e) => {
-                     // Fallback if image is missing
-                     e.currentTarget.style.display = 'none';
-                     e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                   }}
                  />
-                 {/* Fallback text if logo image is missing */}
-                 <span className="hidden text-2xl font-bold text-brand-blue">SHREE G</span>
               </div>
             </Link>
           </div>

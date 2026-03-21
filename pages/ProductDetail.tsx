@@ -50,9 +50,6 @@ const ProductDetail: React.FC = () => {
                 src={selectedImage} 
                 alt={product.name} 
                 className="w-full h-full object-contain mix-blend-multiply transition-transform duration-500"
-                onError={(e) => {
-                  e.currentTarget.src = 'https://via.placeholder.com/500x500?text=Image+Not+Found';
-                }}
               />
             </div>
 
