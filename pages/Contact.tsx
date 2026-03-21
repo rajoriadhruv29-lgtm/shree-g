@@ -78,26 +78,26 @@ const Contact: React.FC = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-2 bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">{t('contact.formTitle')}</h3>
+            <h3 className="text-2xl font-bold text-brand-charcoal mb-6">{t('contact.formTitle')}</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">{t('contact.nameLabel')}</label>
+                  <label htmlFor="name" className="block text-sm font-medium text-brand-charcoal mb-1">{t('contact.nameLabel')}</label>
                   <input type="text" id="name" className="w-full rounded-md border-gray-300 border p-3 focus:border-brand-blue focus:ring-brand-blue outline-none transition-colors" placeholder={t('contact.placeholderName')} />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">{t('contact.emailLabel')}</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-brand-charcoal mb-1">{t('contact.emailLabel')}</label>
                   <input type="email" id="email" className="w-full rounded-md border-gray-300 border p-3 focus:border-brand-blue focus:ring-brand-blue outline-none transition-colors" placeholder="john@example.com" />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">{t('contact.subjectLabel')}</label>
+                <label htmlFor="subject" className="block text-sm font-medium text-brand-charcoal mb-1">{t('contact.subjectLabel')}</label>
                 <input type="text" id="subject" className="w-full rounded-md border-gray-300 border p-3 focus:border-brand-blue focus:ring-brand-blue outline-none transition-colors" placeholder={t('contact.placeholderSubject')} />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">{t('contact.messageLabel')}</label>
+                <label htmlFor="message" className="block text-sm font-medium text-brand-charcoal mb-1">{t('contact.messageLabel')}</label>
                 <textarea id="message" rows={4} className="w-full rounded-md border-gray-300 border p-3 focus:border-brand-blue focus:ring-brand-blue outline-none transition-colors" placeholder={t('contact.placeholderMessage')}></textarea>
               </div>
 

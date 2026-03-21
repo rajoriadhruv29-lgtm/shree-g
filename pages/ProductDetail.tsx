@@ -96,12 +96,12 @@ const ProductDetail: React.FC = () => {
                 <table className="w-full text-left text-sm">
                   <thead>
                     <tr className="bg-gray-100 border-b border-gray-200">
-                      {product.variants.length > 1 && <th className="px-4 py-3 font-semibold text-gray-700">{t('product.variant')}</th>}
-                      <th className="px-4 py-3 font-semibold text-gray-700">{t('product.itemCode')}</th>
-                      <th className="px-4 py-3 font-semibold text-gray-700">{t('product.size')}</th>
-                      <th className="px-4 py-3 font-semibold text-gray-700">{t('product.dim')}</th>
-                      <th className="px-4 py-3 font-semibold text-gray-700">{t('product.thickness')}</th>
-                      <th className="px-4 py-3 font-semibold text-gray-700">{t('product.weight')}</th>
+                      {product.variants.length > 1 && <th className="px-4 py-3 font-semibold text-brand-charcoal">{t('product.variant')}</th>}
+                      <th className="px-4 py-3 font-semibold text-brand-charcoal">{t('product.itemCode')}</th>
+                      <th className="px-4 py-3 font-semibold text-brand-charcoal">{t('product.size')}</th>
+                      <th className="px-4 py-3 font-semibold text-brand-charcoal">{t('product.dim')}</th>
+                      <th className="px-4 py-3 font-semibold text-brand-charcoal">{t('product.thickness')}</th>
+                      <th className="px-4 py-3 font-semibold text-brand-charcoal">{t('product.weight')}</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-100">
@@ -111,7 +111,7 @@ const ProductDetail: React.FC = () => {
                           <td className="px-4 py-4 font-medium text-brand-blue">{variant.variantName}</td>
                         )}
                         <td className="px-4 py-4 text-gray-600">{variant.itemCode || '-'}</td>
-                        <td className="px-4 py-4 text-gray-900 font-semibold">{variant.size}</td>
+                        <td className="px-4 py-4 text-brand-charcoal font-semibold">{variant.size}</td>
                         <td className="px-4 py-4 text-gray-600">{variant.length} x {variant.width}</td>
                         <td className="px-4 py-4 text-gray-600">{variant.thickness}</td>
                         <td className="px-4 py-4 text-gray-600">{variant.weight}</td>
@@ -123,7 +123,7 @@ const ProductDetail: React.FC = () => {
             </div>
 
             <div className="flex gap-4">
-               <Link to="/contact" className="flex-1 bg-brand-blue text-white text-center py-3 rounded-md font-medium hover:bg-gray-900 transition-colors shadow-md">
+               <Link to="/contact" className="flex-1 bg-brand-blue text-white text-center py-3 rounded-md font-medium hover:bg-brand-charcoal transition-colors shadow-md">
                  {t('product.enquire')}
                </Link>
                <button className="flex items-center justify-center w-12 h-12 border border-gray-300 rounded-md hover:bg-gray-50 text-gray-600 hover:text-brand-blue">

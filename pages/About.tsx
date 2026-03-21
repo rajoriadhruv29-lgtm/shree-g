@@ -23,15 +23,15 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="p-8 lg:p-16 flex flex-col justify-center">
               <h3 className="text-2xl font-bold text-brand-blue mb-6">{t('about.whoWeAre')}</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <p className="text-brand-charcoal mb-6 leading-relaxed">
                 {t('about.whoWeAreDesc1')}
               </p>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <p className="text-brand-charcoal mb-6 leading-relaxed">
                 {t('about.whoWeAreDesc2')}
               </p>
               <div className="bg-brand-yellow/10 p-6 rounded-lg border-l-4 border-brand-yellow">
                 <h4 className="font-bold text-brand-blue mb-2">{t('about.missionTitle')}</h4>
-                <p className="text-sm text-gray-700">
+                <p className="text-sm text-brand-charcoal">
                   {t('about.missionDesc')}
                 </p>
               </div>

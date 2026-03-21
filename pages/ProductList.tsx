@@ -52,7 +52,7 @@ const ProductList: React.FC = () => {
                     className="max-w-full max-h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform"
                   />
                 </div>
-                <h3 className="font-bold text-gray-900 group-hover:text-brand-blue">
+                <h3 className="font-bold text-brand-charcoal group-hover:text-brand-blue">
                   {language === 'hi' && product.name_hi ? product.name_hi : product.name}
                 </h3>
                 {mainSpec && (

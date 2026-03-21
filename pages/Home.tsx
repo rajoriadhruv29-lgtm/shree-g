@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   const { t, language } = useLanguage();
 
   useEffect(() => {
-    document.title = "MS Hinge / Kabja Manufacturer Indore | Wholesale Supplier";
+    document.title = "Home | Shree G Hinges - Specialized Manufacturer";
   }, []);
 
   return (
@@ -64,7 +64,7 @@ const Home: React.FC = () => {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 {t('home.aboutTeaserDesc')}
               </p>
-              <Link to="/about" className="text-brand-blue font-semibold border-b-2 border-brand-yellow pb-1 hover:text-gray-900">
+              <Link to="/about" className="text-brand-blue font-semibold border-b-2 border-brand-yellow pb-1 hover:text-brand-charcoal">
                 {t('home.readMore')}
               </Link>
             </div>
@@ -101,7 +101,7 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-blue">
                 <Settings size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">{t('home.adv1Title')}</h3>
+              <h3 className="text-xl font-bold text-brand-charcoal mb-3">{t('home.adv1Title')}</h3>
               <p className="text-gray-600 text-sm">
                 {t('home.adv1Desc')}
               </p>
@@ -112,7 +112,7 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-blue">
                 <LinkIcon size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">{t('home.adv2Title')}</h3>
+              <h3 className="text-xl font-bold text-brand-charcoal mb-3">{t('home.adv2Title')}</h3>
               <p className="text-gray-600 text-sm">
                 {t('home.adv2Desc')}
               </p>
@@ -123,7 +123,7 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-blue">
                 <ShieldCheck size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">{t('home.adv3Title')}</h3>
+              <h3 className="text-xl font-bold text-brand-charcoal mb-3">{t('home.adv3Title')}</h3>
               <p className="text-gray-600 text-sm">
                 {t('home.adv3Desc')}
               </p>
@@ -134,7 +134,7 @@ const Home: React.FC = () => {
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4 text-brand-blue">
                 <Truck size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3">{t('home.adv4Title')}</h3>
+              <h3 className="text-xl font-bold text-brand-charcoal mb-3">{t('home.adv4Title')}</h3>
               <p className="text-gray-600 text-sm">
                 {t('home.adv4Desc')}
               </p>

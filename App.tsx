@@ -17,7 +17,7 @@ const App: React.FC = () => {
     <LanguageProvider>
       <Router>
         <ScrollToTop />
-        <div className="flex flex-col min-h-screen font-sans text-gray-900">
+        <div className="flex flex-col min-h-screen font-sans text-brand-charcoal">
           <Navbar />
           <main className="flex-grow">
             <Routes>
