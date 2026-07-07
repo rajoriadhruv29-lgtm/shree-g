@@ -66,8 +66,8 @@ export const PRODUCTS: Product[] = [
     categoryId: 'rivet-hinges',
     name: 'M.S. Rivet Hinges 3 Inch',
     name_hi: 'M.S. रिवेट हिंज 3 इंच',
-    description: 'The 3-inch M.S. rivet hinge (kabja) is our compact workhorse for cupboard shutters, small doors and light furniture work. Press-formed at 70 x 68 mm with a tight rivet joint, it comes in two clearly separated weight classes: Light at 1.75 mm thickness (110 gm/pair) for budget furniture work, and Heavy at 2.5 mm (150-160 gm/pair) where the shutter sees daily use. Both variants come off the same die, so leaf alignment and pin fitment stay identical box after box — the consistency dealers need for repeat counter sales.',
-    description_hi: '3 इंच M.S. रिवेट हिंज (कब्जा) अलमारी शटर, छोटे दरवाजों और हल्के फर्नीचर के लिए हमारा कॉम्पैक्ट वर्कहॉर्स है। 70 x 68 mm पर प्रेस-निर्मित, दो वजन श्रेणियों में: लाइट 1.75 mm (110 ग्राम/जोड़ी) और हैवी 2.5 mm (150-160 ग्राम/जोड़ी)। दोनों वेरिएंट एक ही डाई से बनते हैं, इसलिए हर डिब्बे में लीफ अलाइनमेंट और पिन फिटमेंट एक समान रहती है।',
+    description: 'The 3-inch M.S. rivet hinge (kabja) is our compact workhorse for cupboard shutters, small doors and light furniture work. Press-formed at 70 x 68 mm with a tight rivet joint, it comes in two clearly separated weight classes: Light at 1.75 mm thickness (110 gm/pair) for budget furniture work, and Heavy at 2.5 mm (160 gm/pair) where the shutter sees daily use. Both variants come off the same die, so leaf alignment and pin fitment stay identical box after box — the consistency dealers need for repeat counter sales.',
+    description_hi: '3 इंच M.S. रिवेट हिंज (कब्जा) अलमारी शटर, छोटे दरवाजों और हल्के फर्नीचर के लिए हमारा कॉम्पैक्ट वर्कहॉर्स है। 70 x 68 mm पर प्रेस-निर्मित, दो वजन श्रेणियों में: लाइट 1.75 mm (110 ग्राम/जोड़ी) और हैवी 2.5 mm (160 ग्राम/जोड़ी)। दोनों वेरिएंट एक ही डाई से बनते हैं, इसलिए हर डिब्बे में लीफ अलाइनमेंट और पिन फिटमेंट एक समान रहती है।',
     imageUrl: '/images/products/rivet-3-inch.jpg',
     images: [
       '/images/products/rivet-3-inch.jpg',
@@ -91,7 +91,7 @@ export const PRODUCTS: Product[] = [
         length: '70 mm',
         width: '68 mm',
         thickness: '2.5 mm',
-        weight: '150-160 gm'
+        weight: '160 gm'
       }
     ]
   },
@@ -143,8 +143,8 @@ export const PRODUCTS: Product[] = [
     categoryId: 'rivet-hinges',
     name: 'M.S. Rivet Hinges 5 Inch',
     name_hi: 'M.S. रिवेट हिंज 5 इंच',
-    description: 'When a standard door hinge starts sagging, the 5-inch M.S. rivet hinge is the fix fabricators reach for. At 125 x 90 mm with a substantial 4.5 mm leaf thickness and 550-600 gm per pair, it carries solid-core doors, workshop doors and heavy steel frames without opening at the pin. One standard variant, one specification — batch-to-batch weight consistency that lets your fabricator customers quote jobs with confidence. Supplied in bulk packing at factory-direct dealer rates.',
-    description_hi: 'जब सामान्य कब्जा झुकने लगे, तो फैब्रिकेटर 5 इंच M.S. रिवेट हिंज चुनते हैं। 125 x 90 mm, 4.5 mm मोटाई और 550-600 ग्राम/जोड़ी — ठोस दरवाजों, वर्कशॉप डोर और भारी स्टील फ्रेम के लिए। एक स्टैंडर्ड वेरिएंट, एक स्पेसिफिकेशन — हर बैच में समान वजन। फैक्ट्री-डायरेक्ट डीलर रेट पर बल्क पैकिंग में उपलब्ध।',
+    description: 'When a standard door hinge starts sagging, the 5-inch M.S. rivet hinge is the fix fabricators reach for. At 125 x 90 mm with a substantial 4.5 mm leaf thickness and 550 gm per pair, it carries solid-core doors, workshop doors and heavy steel frames without opening at the pin. One standard variant, one specification — batch-to-batch weight consistency that lets your fabricator customers quote jobs with confidence. Supplied in bulk packing at factory-direct dealer rates.',
+    description_hi: 'जब सामान्य कब्जा झुकने लगे, तो फैब्रिकेटर 5 इंच M.S. रिवेट हिंज चुनते हैं। 125 x 90 mm, 4.5 mm मोटाई और 550 ग्राम/जोड़ी — ठोस दरवाजों, वर्कशॉप डोर और भारी स्टील फ्रेम के लिए। एक स्टैंडर्ड वेरिएंट, एक स्पेसिफिकेशन — हर बैच में समान वजन। फैक्ट्री-डायरेक्ट डीलर रेट पर बल्क पैकिंग में उपलब्ध।',
     imageUrl: '/images/products/rivet-5-inch.jpg',
     images: [
       '/images/products/rivet-5-inch.jpg',
@@ -159,7 +159,7 @@ export const PRODUCTS: Product[] = [
         length: '125 mm',
         width: '90 mm',
         thickness: '4.5 mm',
-        weight: '550-600 gm'
+        weight: '550 gm'
       }
     ]
   },
@@ -478,8 +478,8 @@ export const PRODUCTS: Product[] = [
     categoryId: 'butt-hinges',
     name: 'M.S. Butt Hinges 3 Inch',
     name_hi: 'M.S. बट हिंज 3 इंच',
-    description: 'The 3-inch M.S. butt hinge (75 x 46 mm, 1.5 mm, 50-55 gm) is the highest-volume furniture hinge in the market — cupboard doors, cabinet shutters, box lids and light interior doors all run on this size. Precision press forming keeps both leaves dead parallel, so shutters close flush without the gap-and-rub complaints cheap mixed-source hinges cause. Sold in bulk dozens at factory rates; the SKU dealers reorder most often, so we keep it in continuous production.',
-    description_hi: '3 इंच M.S. बट हिंज (75 x 46 mm, 1.5 mm, 50-55 ग्राम) बाजार का सबसे ज्यादा बिकने वाला फर्नीचर हिंज है — अलमारी दरवाजे, कैबिनेट शटर, बॉक्स ढक्कन और हल्के दरवाजे। सटीक प्रेस फॉर्मिंग से दोनों लीफ बिल्कुल समानांतर रहती हैं — शटर बिना गैप या रगड़ के बंद होता है। लगातार उत्पादन में रहने वाला हमारा सबसे रीऑर्डर होने वाला आइटम।',
+    description: 'The 3-inch M.S. butt hinge (75 x 46 mm, 1.5 mm, 55 gm) is the highest-volume furniture hinge in the market — cupboard doors, cabinet shutters, box lids and light interior doors all run on this size. Precision press forming keeps both leaves dead parallel, so shutters close flush without the gap-and-rub complaints cheap mixed-source hinges cause. Sold in bulk dozens at factory rates; the SKU dealers reorder most often, so we keep it in continuous production.',
+    description_hi: '3 इंच M.S. बट हिंज (75 x 46 mm, 1.5 mm, 55 ग्राम) बाजार का सबसे ज्यादा बिकने वाला फर्नीचर हिंज है — अलमारी दरवाजे, कैबिनेट शटर, बॉक्स ढक्कन और हल्के दरवाजे। सटीक प्रेस फॉर्मिंग से दोनों लीफ बिल्कुल समानांतर रहती हैं — शटर बिना गैप या रगड़ के बंद होता है। लगातार उत्पादन में रहने वाला हमारा सबसे रीऑर्डर होने वाला आइटम।',
     imageUrl: '/images/products/butt-3-inch.jpg',
     images: [
       '/images/products/butt-3-inch.jpg',
@@ -494,7 +494,7 @@ export const PRODUCTS: Product[] = [
         length: '75 mm',
         width: '46 mm',
         thickness: '1.5 mm',
-        weight: '50-55 gm'
+        weight: '55 gm'
       }
     ]
   },
@@ -517,7 +517,7 @@ export const PRODUCTS: Product[] = [
         itemCode: 'BH-4-L',
         size: '4 Inch',
         length: '100 mm',
-        width: '57 mm',
+        width: '58 mm',
         thickness: '1.5 mm',
         weight: '100 gm'
       },
@@ -526,7 +526,7 @@ export const PRODUCTS: Product[] = [
         itemCode: 'BH-4-M',
         size: '4 Inch',
         length: '100 mm',
-        width: '57 mm',
+        width: '58 mm',
         thickness: '1.8 mm',
         weight: '120 gm'
       },
@@ -535,7 +535,7 @@ export const PRODUCTS: Product[] = [
         itemCode: 'BH-4-H',
         size: '4 Inch',
         length: '100 mm',
-        width: '-',
+        width: '58 mm',
         thickness: '2.5 mm',
         weight: '175 gm'
       }
@@ -560,7 +560,7 @@ export const PRODUCTS: Product[] = [
         itemCode: 'BH-5-L',
         size: '5 Inch',
         length: '125 mm',
-        width: '-',
+        width: '65 mm',
         thickness: '1.5 mm',
         weight: '150 gm'
       },
@@ -569,7 +569,7 @@ export const PRODUCTS: Product[] = [
         itemCode: 'BH-5-M',
         size: '5 Inch',
         length: '125 mm',
-        width: '-',
+        width: '65 mm',
         thickness: '1.8 mm',
         weight: '180 gm'
       },
@@ -578,7 +578,7 @@ export const PRODUCTS: Product[] = [
         itemCode: 'BH-5-H',
         size: '5 Inch',
         length: '125 mm',
-        width: '-',
+        width: '65 mm',
         thickness: '2.5 mm',
         weight: '200 gm'
       }
