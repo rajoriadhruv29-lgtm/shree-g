@@ -676,3 +676,18 @@ export const PRODUCTS: Product[] = [
     ]
   }
 ];
+
+// One flagship SKU per category, shown as the homepage's curated product lineup.
+export const FEATURED_PRODUCT_IDS = [
+  'rivet-4-inch',
+  'fabrication-4-inch',
+  'bolt-4-inch',
+  'lorry-2.5-inch',
+  't-hinge-6-inch',
+  'butt-4-inch',
+  'shutter-kunda',
+];
+
+export const FEATURED_PRODUCTS: Product[] = FEATURED_PRODUCT_IDS
+  .map(id => PRODUCTS.find(p => p.id === id))
+  .filter((p): p is Product => Boolean(p));

@@ -26,12 +26,16 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-3">
-              <div className="h-20 w-auto flex items-center justify-center">
-                 <img 
-                   src="/images/home/logo.png" 
-                   alt="Shree G Hinges" 
+              <div className="h-16 w-auto flex items-center justify-center">
+                 <img
+                   src="/images/home/logo.png"
+                   alt="Shree G Hinges"
                    className="h-full w-auto object-contain hover:scale-105 transition-transform duration-300"
                  />
+              </div>
+              <div className="hidden sm:flex flex-col leading-none">
+                <span className="font-heading font-bold text-xl md:text-2xl text-brand-blue tracking-tight">SHREEG</span>
+                <span className="font-heading font-bold text-xs md:text-sm text-brand-yellow tracking-[0.2em]">HINGES</span>
               </div>
             </Link>
           </div>
