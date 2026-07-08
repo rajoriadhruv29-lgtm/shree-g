@@ -53,8 +53,8 @@ export const CATEGORIES: Category[] = [
     id: 'accessories',
     title: 'Accessories',
     title_hi: 'एक्सेसरीज',
-    description: 'Essential hardware accessories including Outer, Washer, MS Katori, Teen Hole Patti, and Shutter Kunda.',
-    description_hi: 'आउटर, वॉशर, MS कटोरी, तीन होल पट्टी, और शटर कुंडा सहित आवश्यक हार्डवेयर एक्सेसरीज।',
+    description: 'Essential hardware accessories including Outer, Washer, MS Katori, L Patti (Koni), Teen Hole Patti, and Shutter Kunda.',
+    description_hi: 'आउटर, वॉशर, MS कटोरी, L पट्टी / कोनी, तीन होल पट्टी, और शटर कुंडा सहित आवश्यक हार्डवेयर एक्सेसरीज।',
     coverImage: '/images/categories/accessories.jpg'
   }
 ];
@@ -746,6 +746,31 @@ export const PRODUCTS: Product[] = [
         length: '-',
         width: '-',
         thickness: '2.25 mm',
+        weight: '-'
+      }
+    ]
+  },
+  {
+    id: 'l-patti-koni',
+    categoryId: 'accessories',
+    name: 'L Patti (Koni)',
+    name_hi: 'L पट्टी / कोनी (Koni)',
+    description: 'The L Patti — known locally as Koni — is a pressed M.S. L-shaped corner plate for bracing and jointing the corners of gates, grills, window frames and fabricated steel work. Where two sections meet at a right angle, the koni sits into the corner and takes the load off the weld, keeping the joint square through years of daily use. Whether your customers ask for L patti, koni, or an L-angle corner plate, it is the same fitting: press-blanked from MS sheet with clean edges and a consistent profile every batch, welding in flush with no grinding before fitting. A steady-moving fabrication accessory, sold factory-direct in bulk kg or count packing and easily added to any hinge or patti dispatch at no extra freight.',
+    description_hi: 'L पट्टी — जिसे स्थानीय रूप से कोनी (Koni) कहते हैं — एक प्रेस की हुई M.S. L-आकार की कॉर्नर प्लेट है, जो गेट, ग्रिल, खिड़की के फ्रेम और फैब्रिकेटेड स्टील काम के कोनों को जोड़ने और मजबूत करने के लिए इस्तेमाल होती है। जहाँ दो सेक्शन समकोण पर मिलते हैं, वहाँ कोनी कोने में बैठकर वेल्ड से लोड हटाती है और जोड़ को सालों तक सीधा रखती है। ग्राहक चाहे L पट्टी कहें, कोनी कहें या L-एंगल कॉर्नर प्लेट — फिटिंग एक ही है: MS शीट से प्रेस-ब्लैंक्ड, साफ किनारे और हर बैच में एक समान प्रोफाइल, फ्लश वेल्ड, फिटिंग से पहले ग्राइंडिंग की जरूरत नहीं। फैक्ट्री-डायरेक्ट बल्क में, किलो या गिनती पैकिंग में उपलब्ध।',
+    imageUrl: '/images/products/l-patti-koni.jpg',
+    images: [
+      '/images/products/l-patti-koni.jpg',
+      '/images/products/l-patti-koni-2.jpg',
+      '/images/products/l-patti-koni-3.jpg'
+    ],
+    variants: [
+      {
+        variantName: 'Standard',
+        itemCode: 'LPK-01',
+        size: 'Standard',
+        length: '-',
+        width: '-',
+        thickness: '-',
         weight: '-'
       }
     ]
