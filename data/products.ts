@@ -53,8 +53,8 @@ export const CATEGORIES: Category[] = [
     id: 'accessories',
     title: 'Accessories',
     title_hi: 'एक्सेसरीज',
-    description: 'Essential hardware accessories including Outer, Teen Hole Patti, and Shutter Kunda.',
-    description_hi: 'आउटर, तीन होल पट्टी, और शटर कुंडा सहित आवश्यक हार्डवेयर एक्सेसरीज।',
+    description: 'Essential hardware accessories including Outer, Washer, MS Katori, Teen Hole Patti, and Shutter Kunda.',
+    description_hi: 'आउटर, वॉशर, MS कटोरी, तीन होल पट्टी, और शटर कुंडा सहित आवश्यक हार्डवेयर एक्सेसरीज।',
     coverImage: '/images/categories/accessories.jpg'
   }
 ];
@@ -703,6 +703,49 @@ export const PRODUCTS: Product[] = [
         length: '-',
         width: '-',
         thickness: '2mm to 4.5mm',
+        weight: '-'
+      }
+    ]
+  },
+  {
+    id: 'ms-katori',
+    categoryId: 'accessories',
+    name: 'M.S. Katori',
+    name_hi: 'M.S. कटोरी (Katori)',
+    description: 'Press-drawn M.S. katori (dome cup) in three ready sizes — 22.5 mm at 1.75 mm gauge, and 27.25 mm and 48.5 mm at a solid 2.25 mm gauge. Fabricators fit katori across gate, grill and railing work as dome caps and cup washers over bolt heads — one deep draw with no cracked rims, no off-centre domes, and a consistent wall right around the cup. As the manufacturer we blank and draw in-house, so every batch nests and stacks identically. Available in kg or count packing at factory-direct rates — classic ride-along stock that ships with hinges, washers and kunda at no extra freight.',
+    description_hi: 'प्रेस-ड्रॉन M.S. कटोरी तीन तैयार साइज़ों में — 22.5 mm (1.75 mm गेज), और 27.25 mm व 48.5 mm (2.25 mm मज़बूत गेज)। फैब्रिकेटर कटोरी को गेट, ग्रिल और रेलिंग के काम में डोम कैप और बोल्ट हेड के ऊपर कप वॉशर की तरह लगाते हैं — एक ही गहरी ड्रॉ, न फटे किनारे, न टेढ़ा डोम, पूरे कप में एक समान दीवार। निर्माता होने के नाते ब्लैंकिंग और ड्रॉइंग हमारी अपनी फैक्ट्री में होती है, इसलिए हर बैच एक जैसा बैठता है। किलो या गिनती पैकिंग में, फैक्ट्री-डायरेक्ट रेट पर — हिंज, वॉशर और कुंडा के साथ बिना अतिरिक्त भाड़े के जाने वाला आइटम।',
+    imageUrl: '/images/products/ms-katori.jpg',
+    images: [
+      '/images/products/ms-katori.jpg',
+      '/images/products/ms-katori-2.jpg',
+      '/images/products/ms-katori-3.jpg'
+    ],
+    variants: [
+      {
+        variantName: '22.5mm',
+        itemCode: 'KAT-22',
+        size: '22.5 mm',
+        length: '-',
+        width: '-',
+        thickness: '1.75 mm',
+        weight: '-'
+      },
+      {
+        variantName: '27.25mm',
+        itemCode: 'KAT-27',
+        size: '27.25 mm',
+        length: '-',
+        width: '-',
+        thickness: '2.25 mm',
+        weight: '-'
+      },
+      {
+        variantName: '48.5mm',
+        itemCode: 'KAT-48',
+        size: '48.5 mm',
+        length: '-',
+        width: '-',
+        thickness: '2.25 mm',
         weight: '-'
       }
     ]

@@ -44,7 +44,7 @@ const routes = [
   {
     path: '/',
     title: 'MS Hinges Manufacturer India | 28+ SKUs | Shree G Hinges',
-    description: 'Manufacturer of MS hinges, shutter kunda, teen hole patti & hardware accessories in Indore. 28+ SKUs, factory-direct bulk supply for dealers across India.',
+    description: 'Manufacturer of MS hinges, katori, shutter kunda, teen hole patti & hardware accessories in Indore. 28+ SKUs, factory-direct bulk supply for dealers across India.',
     priority: '1.0',
   },
   {
@@ -56,7 +56,7 @@ const routes = [
   {
     path: '/products',
     title: 'Product Range — MS Hinges & Hardware | Shree G Hinges',
-    description: 'Browse our full range: rivet hinges, fabrication hinges, bolt hinges, lorry hinges, T-hinges, butt hinges, shutter kunda, teen hole patti, washers & outers.',
+    description: 'Browse our full range: rivet hinges, fabrication hinges, bolt hinges, lorry hinges, T-hinges, butt hinges, MS katori, shutter kunda, teen hole patti & washers.',
     priority: '0.9',
   },
   {

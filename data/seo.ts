@@ -11,7 +11,7 @@ export const STATIC_SEO = {
   home: {
     title: 'MS Hinges Manufacturer India | 28+ SKUs | Shree G Hinges',
     description:
-      'Manufacturer of MS hinges, shutter kunda, teen hole patti & hardware accessories in Indore. 28+ SKUs, factory-direct bulk supply for dealers across India.',
+      'Manufacturer of MS hinges, katori, shutter kunda, teen hole patti & hardware accessories in Indore. 28+ SKUs, factory-direct bulk supply for dealers across India.',
   },
   about: {
     title: 'About Us | MS Hinge Manufacturer, Indore | Shree G Hinges',
@@ -21,7 +21,7 @@ export const STATIC_SEO = {
   products: {
     title: 'Product Range — MS Hinges & Hardware | Shree G Hinges',
     description:
-      'Browse our full range: rivet hinges, fabrication hinges, bolt hinges, lorry hinges, T-hinges, butt hinges, shutter kunda, teen hole patti, washers & outers.',
+      'Browse our full range: rivet hinges, fabrication hinges, bolt hinges, lorry hinges, T-hinges, butt hinges, MS katori, shutter kunda, teen hole patti & washers.',
   },
   blog: {
     title: 'Guides for Hardware Dealers & Fabricators | Shree G Hinges',
@@ -50,8 +50,8 @@ export function categorySeo(category: Category) {
 export function productSeo(product: Product) {
   const v = product.variants[0];
   const specBits: string[] = [];
-  if (v?.thickness) specBits.push(`${v.thickness} thickness`);
-  if (v?.weight) specBits.push(`${v.weight} weight`);
+  if (v?.thickness && v.thickness !== '-') specBits.push(`${v.thickness} thickness`);
+  if (v?.weight && v.weight !== '-') specBits.push(`${v.weight} weight`);
   const variantNote =
     product.variants.length > 1 ? `${product.variants.length} variants. ` : '';
 
