@@ -661,7 +661,8 @@ export const PRODUCTS: Product[] = [
     description_hi: '4 से 5 mm मटेरियल से बना हैवी-ड्यूटी M.S. शटर कुंडा — दुकान शटर, गोदाम दरवाजों और गेटों की लॉकिंग का आधार। इस मोटाई पर कुंडा खींच-तान और बार-बार पटकने से नहीं खुलता, जबकि हल्के गेज की नकलें महीनों में ढीली हो जाती हैं। हर बैच में एक समान बेंडिंग और साफ वेल्ड — हैस्प हर बार पहली बार में सही बैठता है।',
     imageUrl: '/images/products/shutter-kunda.jpg',
     images: [
-      '/images/products/shutter-kunda.jpg'
+      '/images/products/shutter-kunda.jpg',
+      '/images/products/shutter-kunda-2.jpg'
         ],
     variants: [
       {
