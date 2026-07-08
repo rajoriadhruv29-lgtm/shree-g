@@ -674,6 +674,38 @@ export const PRODUCTS: Product[] = [
         weight: '-'
       }
     ]
+  },
+  {
+    id: 'washer',
+    categoryId: 'accessories',
+    name: 'Washer',
+    name_hi: 'वॉशर',
+    description: 'M.S. washers pressed in two outer diameters — 30 mm and 40 mm — with thickness graded from 2 mm up to 4.5 mm to suit the bolt and load. A true ride-along accessory: washers go out with hinges, bolts and kunda to the same fabricator on the same bill, so stocking them saves your customer a second trip. Press-blanked with clean edges and a consistent bore across every batch, available in kg or count packing and easily added to any hardware dispatch at no extra freight.',
+    description_hi: 'M.S. वॉशर दो आउटर डायमीटर में — 30 mm और 40 mm — और बोल्ट व लोड के अनुसार 2 mm से 4.5 mm तक की मोटाई में। यह क्लासिक साथ-बिकने वाली एक्सेसरी है: वॉशर हिंज, बोल्ट और कुंडा के साथ उसी फैब्रिकेटर को, उसी बिल में जाते हैं — स्टॉक रखने से ग्राहक का दूसरा चक्कर बचता है। प्रेस-ब्लैंक्ड, साफ किनारे और हर बैच में समान बोर — किलो या गिनती पैकिंग में उपलब्ध, किसी भी हार्डवेयर डिस्पैच में बिना अतिरिक्त भाड़े के जुड़ जाता है।',
+    imageUrl: '/images/products/washer.jpg',
+    images: [
+      '/images/products/washer.jpg'
+    ],
+    variants: [
+      {
+        variantName: '30mm',
+        itemCode: 'WSH-30',
+        size: '30 mm',
+        length: '-',
+        width: '-',
+        thickness: '2mm to 4.5mm',
+        weight: '-'
+      },
+      {
+        variantName: '40mm',
+        itemCode: 'WSH-40',
+        size: '40 mm',
+        length: '-',
+        width: '-',
+        thickness: '2mm to 4.5mm',
+        weight: '-'
+      }
+    ]
   }
 ];
 
